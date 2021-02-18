@@ -65,4 +65,70 @@ header h1 strong {
   background-color: #313131;
   color: #AAA;
 }
+
+.content-wrap main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  padding: 0px 16px;
+}
+
+.content-wrap main .main-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.content-wrap main .main-head .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+
+.content-wrap main .main-head .search-box input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+  border-radius: 999px;
+  background-color: #EEE;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.content-wrap main .main-head .search-box input ::-webkit-input-placeholder {
+  color: #888;
+}
+
+.content-wrap main .main-head .search-box input :-ms-input-placeholder {
+  color: #888;
+}
+
+.content-wrap main .main-head .search-box input ::-ms-input-placeholder {
+  color: #888;
+}
+
+.content-wrap main .main-head .search-box input ::placeholder {
+  color: #888;
+}
+
+.content-wrap main .main-head .search-box input:focus, .content-wrap main .main-head .search-box input:valid {
+  background-color: #313131;
+  color: #FFF;
+}
 /*# sourceMappingURL=main.css.map */

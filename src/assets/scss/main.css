@@ -82,12 +82,12 @@ header h1 strong {
 }
 
 .img-home {
-  width: 800px;
-  height: 800px;
+  width: 544px;
+  height: 459px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: -150px auto -280px auto;
+  margin: -120px auto -70px auto;
 }
 
 .header-home {
@@ -284,9 +284,9 @@ header h1 strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: -170px auto -280px auto;
-    width: 780px;
-    height: 780px;
+    margin: -120px auto -70px auto;
+    width: 544px;
+    height: 459px;
     overflow: hidden;
   }
   .container-arrow {
@@ -310,9 +310,9 @@ header h1 strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: -100px auto -210px auto;
-    width: 500px;
-    height: 500px;
+    margin: -120px auto -70px auto;
+    width: 544px;
+    height: 459px;
     overflow: hidden;
   }
   .top-manga-container,

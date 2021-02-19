@@ -7,8 +7,8 @@ import Loading from "../../components/Loading";
 
 import animationData from "../../lottie/menhera-chan-2.json";
 
-import { motion } from "framer-motion";
-import { animationOne } from "../../animations/index";
+import { motion } from 'framer-motion';
+import { animationOne } from '../../animations/index';
 
 import "../../assets/scss/main.css";
 

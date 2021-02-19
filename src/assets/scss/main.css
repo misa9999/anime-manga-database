@@ -17,6 +17,10 @@ body {
   background: #1a1a1a;
 }
 
+.loading {
+  padding-top: 250px;
+}
+
 #progressbar {
   position: fixed;
   top: 0;

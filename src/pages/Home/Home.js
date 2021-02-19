@@ -1,11 +1,14 @@
+import { useState, useEffect } from 'react';
+
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
 
 import Header from "../../components/Header";
+import Loading from '../../components/Loading';
+
+
+
 import "../../assets/scss/main.css";
 
-import Lottie from "react-lottie";
-import animationData from "../../lottie/menhera-chan-1.json";
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -14,30 +17,13 @@ function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5500);
-  }, []);
-
-  const LoadingAnimation = () => {
-    const defaultOptions = {
-      loop: true,
-      autoplay: true,
-      animationData,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    };
-
-    return (
-      <div className="loading">
-        <Lottie options={defaultOptions} height={250} width={250} />
-      </div>
-    );
-  };
+    }, 5500)
+  }, [])
 
   return (
     <>
       {loading ? (
-        LoadingAnimation()
+        <Loading />
       ) : (
         <div className="home-container">
           <Header value={"header-home"} name={"Anime&Manga"} />

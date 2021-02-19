@@ -1,16 +1,22 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import Header from '../../components/Header'
+import Header from "../../components/Header";
+import "../../assets/scss/main.css";
 
 function Home() {
   return (
-    <div>
+    <div className="home-container">
       <Header />
-      <h1>ANIME MANGA DATABASE</h1>
-      <Link to="/anime-search"><button>ANIME</button></Link>
-      <Link to="/manga-search"><button>MANGA</button></Link>
+      <div className="button-container">
+        <Link to="/anime-search" className="button-anime">
+          ANIME
+        </Link>
+        <Link to="/manga-search" className="button-manga">
+          MANGA
+        </Link>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Home;

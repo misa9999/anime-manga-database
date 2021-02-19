@@ -43,7 +43,7 @@ function AnimeSearch() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5500);
+    }, 1500);
   }, []);
 
   let progress = document.getElementById('progressbar');

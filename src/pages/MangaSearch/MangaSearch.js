@@ -4,8 +4,7 @@ import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
 import MainContent from "../../components/MainContent";
 
-import Lottie from "react-lottie";
-import animationData from "../../lottie/menhera-chan-2.json";
+import Loading from '../../components/Loading';
 
 function MangaSearch() {
   const [mangaList, setMangaList] = useState([]);
@@ -37,6 +36,10 @@ function MangaSearch() {
 
   useEffect(() => {
     getTopManga();
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   }, []);
 
   let progress = document.getElementById("progressbar");
@@ -46,34 +49,10 @@ function MangaSearch() {
     progress.style.height = progressHeight + "%";
   };
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 5500);
-  }, []);
-
-  const LoadingAnimation = () => {
-    const defaultOptions = {
-      loop: true,
-      autoplay: true,
-      animationData,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    };
-
-    return (
-      <div className="loading">
-        <Lottie options={defaultOptions} height={250} width={250} />
-      </div>
-    );
-  };
-
   return (
     <>
       {loading ? (
-        LoadingAnimation()
+        <Loading />
       ) : (
         <div>
           <div id="progressbar"></div>

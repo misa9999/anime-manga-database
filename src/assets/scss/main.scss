@@ -11,6 +11,13 @@ $gray-dark: #222;
   box-sizing: border-box;
 
   font-family: "Fira sans", sans-serif;
+
+  ::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 }
 
 body {
@@ -18,12 +25,6 @@ body {
   height: 150vh;
 }
 
-#progressbar::-webkit-scrollbar {
-  display: none;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  width: 0;
-}
 
 #progressbar {
   position: fixed;

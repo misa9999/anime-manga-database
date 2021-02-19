@@ -253,20 +253,6 @@ header h1 strong {
   color: #aaa;
 }
 
-.content-wrap aside nav .container-arrow {
-  margin-top: -85px;
-  margin-bottom: 100px;
-  position: fixed;
-}
-
-.content-wrap aside nav .container-arrow .arrow-back {
-  font-size: 24px;
-  text-align: center;
-  padding: 8px;
-  width: 50px;
-  background: #d9116e;
-}
-
 .anime-list {
   display: -ms-grid;
   display: grid;
@@ -326,5 +312,19 @@ header h1 strong {
   color: #d9116e;
   padding: 10px;
   width: 250px;
+}
+
+.container-arrow {
+  margin-top: -85px;
+  margin-bottom: 100px;
+  position: fixed;
+}
+
+.container-arrow .arrow-back {
+  font-size: 24px;
+  text-align: center;
+  padding: 8px;
+  width: 50px;
+  background: #d9116e;
 }
 /*# sourceMappingURL=main.css.map */

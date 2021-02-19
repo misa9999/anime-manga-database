@@ -217,20 +217,6 @@ header {
           color: $gray;
         }
       }
-
-      .container-arrow {
-        margin-top: -85px;
-        margin-bottom: 100px;
-        position: fixed;
-
-        .arrow-back {
-          font-size: 24px;
-          text-align: center;
-          padding: 8px;
-          width: 50px;
-          background: $pink;
-        }
-      }
     }
   }
 }
@@ -287,5 +273,19 @@ header {
         width: 250px;
       }
     }
+  }
+}
+
+.container-arrow {
+  margin-top: -85px;
+  margin-bottom: 100px;
+  position: fixed;
+
+  .arrow-back {
+    font-size: 24px;
+    text-align: center;
+    padding: 8px;
+    width: 50px;
+    background: $pink;
   }
 }

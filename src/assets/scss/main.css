@@ -293,10 +293,6 @@ header h1 strong {
   padding: 16px 8px;
 }
 
-.anime-list .anime-card:hover .anime-title {
-  visibility: visible;
-}
-
 .anime-list .anime-card a {
   text-decoration: none;
 }
@@ -325,9 +321,7 @@ header h1 strong {
 .anime-list .anime-card .anime-title {
   background: #222;
   width: 250px;
-  z-index: -1;
   display: block;
-  visibility: hidden;
   -webkit-transition: all 150ms;
   transition: all 150ms;
 }
@@ -352,6 +346,13 @@ header h1 strong {
   background: #d9116e;
 }
 
+@media screen and (max-width: 1300px) {
+  .top-anime-container,
+  .top-manga-container {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .img-home {
     display: -webkit-box;
@@ -360,6 +361,21 @@ header h1 strong {
     margin: -170px auto -280px auto;
     width: 780px;
     height: 780px;
+    overflow: hidden;
+  }
+  .container-arrow {
+    margin-top: -125px;
+    position: absolute;
+  }
+  .top-manga-container,
+  .top-anime-container {
+    display: none;
+  }
+  .anime-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -371,9 +387,27 @@ header h1 strong {
     margin: -100px auto -210px auto;
     width: 500px;
     height: 500px;
+    overflow: hidden;
+  }
+  .top-manga-container,
+  .top-anime-container {
+    display: none;
+  }
+  .container-arrow {
+    margin-top: -90px;
+    position: absolute;
+  }
+  input {
+    max-width: 250px;
   }
   .title-home {
     font-size: 40px;
+  }
+  .anime-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */

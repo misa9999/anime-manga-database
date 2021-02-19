@@ -287,7 +287,7 @@ header h1 strong {
   width: 213%;
   height: 350px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px 5px 0 0;
   -webkit-transition: all 200ms;
   transition: all 200ms;

@@ -253,6 +253,20 @@ header h1 strong {
   color: #aaa;
 }
 
+.content-wrap aside nav .container-arrow {
+  margin-top: -85px;
+  margin-bottom: 100px;
+  position: fixed;
+}
+
+.content-wrap aside nav .container-arrow .arrow-back {
+  font-size: 24px;
+  text-align: center;
+  padding: 8px;
+  width: 50px;
+  background: #d9116e;
+}
+
 .anime-list {
   display: -ms-grid;
   display: grid;

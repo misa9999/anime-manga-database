@@ -26,6 +26,13 @@ header h1 strong {
   color: #ed9d2d;
 }
 
+.content-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
 .content-wrap main {
   margin: 0 auto;
 }

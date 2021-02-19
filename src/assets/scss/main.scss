@@ -22,11 +22,7 @@ $gray-dark: #222;
 
 body {
   background: $bg-color;
-<<<<<<< HEAD
-=======
-  height: 150vh;
 }
-
 
 #progressbar {
   position: fixed;
@@ -77,7 +73,6 @@ body {
   50% {
     filter: hue-rotate(360deg);
   }
->>>>>>> 57eab72b80d187d6f839f24f174ed17c7ee51233
 }
 
 header {

@@ -222,6 +222,7 @@ header h1 strong {
 
 .content-wrap aside nav .top-manga-container div {
   position: fixed;
+  padding-top: 50px;
 }
 
 .content-wrap aside nav .top-manga-container div a {
@@ -232,6 +233,7 @@ header h1 strong {
   color: #d9116e;
   font-size: 24px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .content-wrap aside nav a {
@@ -287,7 +289,7 @@ header h1 strong {
   width: 213%;
   height: 350px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 5px 5px 0 0;
   -webkit-transition: all 200ms;
   transition: all 200ms;

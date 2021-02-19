@@ -184,7 +184,7 @@ header {
       .top-manga-container {
         div {
           position: fixed;
-
+          padding-top: 50px;
           a {
             width: 235px;
           }
@@ -195,6 +195,7 @@ header {
         color: $pink;
         font-size: 24px;
         margin-bottom: 16px;
+        text-align: center;
       }
 
       a {

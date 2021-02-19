@@ -4,9 +4,8 @@ function Header({ value, name }) {
   console.log(value)
   return (
     <header className={value} >
+      <h1 className={value ? "title-home" : ''}><strong>{name}</strong>Search</h1>
       {value && <img src={Img01} alt="" className="img-home" />}
-
-      <h1><strong>{name}</strong>Search</h1>
     </header>
   )
 }

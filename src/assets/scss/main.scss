@@ -98,6 +98,13 @@ header {
   main {
     margin: 0 auto;
 
+    .main-head {
+      form {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
     input {
       border: none;
       border-radius: 50px;
@@ -129,6 +136,7 @@ header {
     nav {
       padding-left: 16px;
       padding-right: 16px;
+      position: fixed;
 
       h3 {
         color: $pink;
@@ -161,15 +169,20 @@ header {
 }
 
 .anime-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 32px;
-  margin: 32px -8px 0px;
 
   .anime-card {
     flex: 1 1 50%;
     max-width: 50%;
     padding: 16px 8px;
+
+    &:hover {
+      .anime-title {
+        visibility: visible;
+      }
+    }
 
     a {
       text-decoration: none;
@@ -181,22 +194,31 @@ header {
 
       img {
         display: block;
-        width: 100%;
+        width: 213%;
         height: 350px;
         object-fit: cover;
-        border-radius: 5px;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+        border-radius: 5px 5px 0 0;
         transition: all 200ms;
 
         &:hover {
-          transform: scale(1.03) translateY(-10px);
+          transform: translateY(-5px);
         }
       }
     }
 
-    h3 {
-      color: $gray;
-      padding-top: 15px;
+    .anime-title {
+      background: $gray-dark;
+      width: 250px;
+      z-index: -1;
+      display: block;
+      visibility: hidden;
+      transition: all 150ms;
+
+      h3 {
+        color: $pink;
+        padding: 10px;
+        width: 250px;
+      }
     }
   }
 }

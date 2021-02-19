@@ -115,6 +115,15 @@ header h1 strong {
   margin: 0 auto;
 }
 
+.content-wrap main .main-head form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .content-wrap main input {
   border: none;
   border-radius: 50px;
@@ -150,6 +159,7 @@ header h1 strong {
 .content-wrap aside nav {
   padding-left: 16px;
   padding-right: 16px;
+  position: fixed;
 }
 
 .content-wrap aside nav h3 {
@@ -178,13 +188,11 @@ header h1 strong {
 }
 
 .anime-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   margin-top: 32px;
-  margin: 32px -8px 0px;
 }
 
 .anime-list .anime-card {
@@ -193,6 +201,10 @@ header h1 strong {
           flex: 1 1 50%;
   max-width: 50%;
   padding: 16px 8px;
+}
+
+.anime-list .anime-card:hover .anime-title {
+  visibility: visible;
 }
 
 .anime-list .anime-card a {
@@ -206,24 +218,33 @@ header h1 strong {
 
 .anime-list .anime-card figure img {
   display: block;
-  width: 100%;
+  width: 213%;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px;
-  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
-          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 5px 5px 0 0;
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
 
 .anime-list .anime-card figure img:hover {
-  -webkit-transform: scale(1.03) translateY(-10px);
-          transform: scale(1.03) translateY(-10px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
-.anime-list .anime-card h3 {
-  color: #aaa;
-  padding-top: 15px;
+.anime-list .anime-card .anime-title {
+  background: #222;
+  width: 250px;
+  z-index: -1;
+  display: block;
+  visibility: hidden;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+
+.anime-list .anime-card .anime-title h3 {
+  color: #d9116e;
+  padding: 10px;
+  width: 250px;
 }
 /*# sourceMappingURL=main.css.map */

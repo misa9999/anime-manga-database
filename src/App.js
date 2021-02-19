@@ -9,6 +9,17 @@ function App() {
   const [topAnime, setTopAnime] = useState([]);
   const [search, setSearch] = useState('');
 
+  const GetTopAnime = async () => {
+    const temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/bypopularity`)
+      .then(res => res.json());
+    
+    setTopAnime(temp.top.slice(0, 5));
+  }
+
+  useEffect(() => {
+    GetTopAnime();
+  }, [])
+
   return (
     <div>
       <Header />

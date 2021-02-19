@@ -98,6 +98,13 @@ header {
   main {
     margin: 0 auto;
 
+    .main-head {
+      form {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
     input {
       border: none;
       border-radius: 50px;
@@ -129,6 +136,7 @@ header {
     nav {
       padding-left: 16px;
       padding-right: 16px;
+      position: fixed;
 
       h3 {
         color: $pink;
@@ -161,10 +169,9 @@ header {
 }
 
 .anime-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 32px;
-  margin: 32px -8px 0px;
 
   .anime-card {
     flex: 1 1 50%;
@@ -181,7 +188,7 @@ header {
 
       img {
         display: block;
-        width: 100%;
+        width: auto;
         height: 350px;
         object-fit: cover;
         border-radius: 5px;
@@ -197,6 +204,7 @@ header {
     h3 {
       color: $gray;
       padding-top: 15px;
+      width: 250px;
     }
   }
 }

@@ -75,6 +75,39 @@ body {
   }
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+
+  a {
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    padding: 7px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(90deg, #f40388, #a13271, #ffeb3b, #f40388);
+    background-size: 400%;
+    margin: 0 10px;
+    border-radius: 30px;
+
+    &:hover {
+      animation: buttonBg 8s linear infinite;
+    }
+  }
+
+  @keyframes buttonBg {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+}
+
 header {
   padding-top: 50px;
   padding-bottom: 50px;

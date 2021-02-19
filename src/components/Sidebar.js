@@ -26,6 +26,9 @@ function Sidebar(props) {
         </nav>
       ) : (
         <nav>
+          <div className="container-arrow">
+            <Link to="/" className="arrow-back">&lt;</Link>
+          </div>
         <div className="top-manga-container">
           <div>
             <h3>Top manga</h3>

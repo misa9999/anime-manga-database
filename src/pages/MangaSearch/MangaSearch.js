@@ -4,10 +4,12 @@ import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
 import MainContent from "../../components/MainContent";
 
-import Loading from '../../components/Loading';
+import Loading from "../../components/Loading";
 
-import animationData from '../../lottie/menhera-chan-1.json'
+import animationData from "../../lottie/menhera-chan-1.json";
 
+import { motion } from "framer-motion";
+import { animationTwo, transition } from "../../animations/index";
 
 function MangaSearch() {
   const [mangaList, setMangaList] = useState([]);
@@ -50,7 +52,13 @@ function MangaSearch() {
       {loading ? (
         <Loading animationData={animationData} />
       ) : (
-        <div>
+        <motion.div
+          initial="out"
+          animate="in"
+          exit="out"
+          variants={animationTwo}
+          transition={transition}
+        >
           <Header name={"Manga"} />
           <div className="content-wrap">
             <Sidebar topManga={topManga} />
@@ -61,7 +69,7 @@ function MangaSearch() {
               mangaList={mangaList}
             />
           </div>
-        </div>
+        </motion.div>
       )}
     </>
   );

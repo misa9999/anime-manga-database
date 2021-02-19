@@ -1,16 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
 import Header from "../../components/Header";
-import Loading from '../../components/Loading';
+import Loading from "../../components/Loading";
 
-import animationData from '../../lottie/menhera-chan-2.json'
+import animationData from "../../lottie/menhera-chan-2.json";
 
-
+import { motion } from "framer-motion";
+import { animationOne } from "../../animations/index";
 
 import "../../assets/scss/main.css";
-
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -19,15 +19,20 @@ function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000)
-  }, [])
+    }, 2000);
+  }, []);
 
   return (
     <>
       {loading ? (
         <Loading animationData={animationData} />
       ) : (
-        <div className="home-container">
+        <motion.div
+          initial="out"
+          animate="in"
+          exit="out"
+          variants={animationOne}
+        >
           <Header value={"header-home"} name={"Anime&Manga"} />
           <div className="button-container">
             <Link to="/anime-search" className="button-anime">
@@ -37,7 +42,7 @@ function Home() {
               MANGA
             </Link>
           </div>
-        </div>
+        </motion.div>
       )}
     </>
   );

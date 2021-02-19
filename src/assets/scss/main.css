@@ -159,6 +159,11 @@ header h1 strong {
   padding-top: 250px;
 }
 
+.img-home {
+  margin-left: 360px;
+  width: 100px;
+}
+
 .content-wrap {
   display: -ms-grid;
   display: grid;

@@ -136,7 +136,26 @@ header {
     nav {
       padding-left: 16px;
       padding-right: 16px;
-      position: fixed;
+
+      .top-anime-container {
+        div {
+          position: fixed;
+          top: 135px;
+          left: 16px;
+        }
+      }
+
+      .top-manga-container {
+        div {
+          position: fixed;
+          top: 450px;
+          left: 16px;
+
+          a {
+            width: 235px;
+          }
+        }
+      }
 
       h3 {
         color: $pink;

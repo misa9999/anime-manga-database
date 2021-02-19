@@ -35,7 +35,7 @@ function AnimeSearch() {
 
   return (
     <div>
-      <Header />
+      <Header name={'Anime'} />
       <div className="content-wrap">
         <Sidebar topAnime={topAnime} />
         <MainContent 

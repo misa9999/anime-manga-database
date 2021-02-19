@@ -35,7 +35,7 @@ function MangaSearch() {
 
   return (
     <div>
-      <Header />
+      <Header name={'Manga'} />
       <div className="content-wrap">
         <Sidebar topManga={topManga}/>
         <MainContent 

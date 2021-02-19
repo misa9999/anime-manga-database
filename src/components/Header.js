@@ -1,7 +1,8 @@
-function Header() {
+function Header({ value, name }) {
+  console.log(value)
   return (
-    <header>
-      <h1><strong>Anime</strong>Search</h1>
+    <header className={value} >
+      <h1><strong>{name}</strong>Search</h1>
     </header>
   )
 }

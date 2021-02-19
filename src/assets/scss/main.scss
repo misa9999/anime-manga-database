@@ -75,10 +75,6 @@ body {
   }
 }
 
-.header-home {
-  padding-top: 250px;
-}
-
 .button-container {
   display: flex;
   justify-content: center;
@@ -114,7 +110,7 @@ body {
 }
 
 header {
-  padding-top: 250px;
+  padding-top: 50px;
   padding-bottom: 50px;
 
   h1 {
@@ -127,6 +123,10 @@ header {
       color: $pink-secondary;
     }
   }
+}
+
+.header-home {
+  padding-top: 250px;
 }
 
 .content-wrap {

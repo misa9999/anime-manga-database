@@ -6,7 +6,7 @@ import "../../assets/scss/main.css";
 function Home() {
   return (
     <div className="home-container">
-      <Header />
+      <Header value={'header-home'} name={'Anime&Manga'} />
       <div className="button-container">
         <Link to="/anime-search" className="button-anime">
           ANIME

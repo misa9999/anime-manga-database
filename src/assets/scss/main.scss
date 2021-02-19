@@ -114,7 +114,7 @@ body {
 }
 
 header {
-  padding-top: 250px;
+  padding-top: 50px;
   padding-bottom: 50px;
 
   h1 {
@@ -215,6 +215,20 @@ header {
         &:hover {
           background-color: $bg-color-secondary;
           color: $gray;
+        }
+      }
+
+      .container-arrow {
+        margin-top: -85px;
+        margin-bottom: 100px;
+        position: fixed;
+
+        .arrow-back {
+          font-size: 24px;
+          text-align: center;
+          padding: 8px;
+          width: 50px;
+          background: $pink;
         }
       }
     }

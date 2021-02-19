@@ -144,7 +144,7 @@ body {
 }
 
 header {
-  padding-top: 250px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -251,6 +251,20 @@ header h1 strong {
 .content-wrap aside nav a:hover {
   background-color: #313131;
   color: #aaa;
+}
+
+.content-wrap aside nav .container-arrow {
+  margin-top: -85px;
+  margin-bottom: 100px;
+  position: fixed;
+}
+
+.content-wrap aside nav .container-arrow .arrow-back {
+  font-size: 24px;
+  text-align: center;
+  padding: 8px;
+  width: 50px;
+  background: #d9116e;
 }
 
 .anime-list {

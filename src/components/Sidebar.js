@@ -1,8 +1,13 @@
+import { Link } from "react-router-dom";
+
 function Sidebar(props) {
   return (
     <aside>
       {props.topAnime ? (
         <nav>
+          <div className="container-arrow">
+            <Link to="/" className="arrow-back">&lt;</Link>
+          </div>
           <div className="top-anime-container">
             <div>
               <h3>Top anime</h3>
@@ -38,7 +43,6 @@ function Sidebar(props) {
         </div>
       </nav>
       )}
-
     </aside>
   );
 }

@@ -15,65 +15,6 @@ $gray-dark: #222;
 
 body {
   background: $bg-color;
-  height: 150vh;
-}
-
-#progressbar::-webkit-scrollbar {
-  display: none;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  width: 0;
-}
-
-#progressbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  animation: scrollbar 5s linear infinite;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #008aff, #00ffe7);
-    filter: blur(5px);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #008aff, #00ffe7);
-    filter: blur(5px);
-  }
-}
-
-#scrollPath {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-@keyframes scrollbar {
-  0%,
-  100% {
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    filter: hue-rotate(360deg);
-  }
 }
 
 header {
@@ -104,6 +45,7 @@ header {
       border-radius: 50px;
       width: 500px;
       height: 45px;
+      margin-left: 15px;
       padding: 16px;
       outline: none;
       font-size: 16px;
@@ -156,6 +98,47 @@ header {
           color: $gray;
         }
       }
+    }
+  }
+}
+
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  margin: 32px -8px 0px;
+
+  .anime-card {
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding: 16px 8px;
+
+    a {
+      text-decoration: none;
+    }
+
+    figure {
+      display: block;
+      margin-bottom: 16px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+        transition: all 200ms;
+
+        &:hover {
+          transform: scale(1.03) translateY(-10px);
+        }
+      }
+    }
+
+    h3 {
+      color: $gray;
+      padding-top: 15px;
     }
   }
 }

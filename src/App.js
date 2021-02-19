@@ -35,26 +35,17 @@ function App() {
     GetTopAnime();
   }, [])
 
-  let progress = document.getElementById('progressbar');
-  let totalHeight = document.body.scrollHeight - window.innerHeight;
-  window.onscroll = function(){
-    let progressHeight = (window.pageYOffset / totalHeight) * 100;
-    progress.style.height = progressHeight + '%';
-  }
-
   return (
     <div>
-      <div id="progressbar"></div>
-      <div id="scrollPath"></div>
       <Header />
       <div className="content-wrap">
         <Sidebar topAnime={topAnime} />
-        <MainContent 
-          handleSearch={handleSearch}
-          search={search}
-          setSearch={setSearch}
-          animeList={animeList}
-        />
+          <MainContent 
+            handleSearch={handleSearch}
+            search={search}
+            setSearch={setSearch}
+            animeList={animeList}
+          />
       </div>
     </div>
   );

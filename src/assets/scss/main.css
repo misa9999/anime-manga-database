@@ -88,6 +88,10 @@ body {
   }
 }
 
+.header-home {
+  padding-top: 250px;
+}
+
 .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +99,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button-container a {
@@ -137,7 +144,7 @@ body {
 }
 
 header {
-  padding-top: 50px;
+  padding-top: 250px;
   padding-bottom: 50px;
 }
 
@@ -211,14 +218,10 @@ header h1 strong {
 
 .content-wrap aside nav .top-anime-container div {
   position: fixed;
-  top: 135px;
-  left: 16px;
 }
 
 .content-wrap aside nav .top-manga-container div {
   position: fixed;
-  top: 450px;
-  left: 16px;
 }
 
 .content-wrap aside nav .top-manga-container div a {

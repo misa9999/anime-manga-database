@@ -21,7 +21,7 @@ function Sidebar(props) {
         </nav>
       ) : (
         <nav>
-        <div className="top-anime-container">
+        <div className="top-manga-container">
           <div>
             <h3>Top manga</h3>
             {props.topManga.map((manga) => (

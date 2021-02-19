@@ -75,9 +75,14 @@ body {
   }
 }
 
+.header-home {
+  padding-top: 250px;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   a {
     width: 200px;
@@ -109,7 +114,7 @@ body {
 }
 
 header {
-  padding-top: 50px;
+  padding-top: 250px;
   padding-bottom: 50px;
 
   h1 {
@@ -173,16 +178,12 @@ header {
       .top-anime-container {
         div {
           position: fixed;
-          top: 135px;
-          left: 16px;
         }
       }
 
       .top-manga-container {
         div {
           position: fixed;
-          top: 450px;
-          left: 16px;
 
           a {
             width: 235px;

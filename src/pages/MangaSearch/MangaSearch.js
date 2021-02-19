@@ -39,13 +39,6 @@ function MangaSearch() {
     getTopManga();
   }, []);
 
-  let progress = document.getElementById("progressbar");
-  let totalHeight = document.body.scrollHeight - window.innerHeight;
-  window.onscroll = function () {
-    let progressHeight = (window.pageYOffset / totalHeight) * 100;
-    progress.style.height = progressHeight + "%";
-  };
-
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -76,8 +69,6 @@ function MangaSearch() {
         LoadingAnimation()
       ) : (
         <div>
-          <div id="progressbar"></div>
-          <div id="scrollPath"></div>
           <Header name={"Manga"} />
           <div className="content-wrap">
             <Sidebar topManga={topManga} />

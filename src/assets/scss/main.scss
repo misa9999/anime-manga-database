@@ -24,6 +24,10 @@ body {
   background: $bg-color;
 }
 
+.loading {
+  padding-top: 250px;
+}
+
 #progressbar {
   position: fixed;
   top: 0;

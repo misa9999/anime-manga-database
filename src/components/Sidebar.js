@@ -18,7 +18,7 @@ function Sidebar({ topAnime, topManga }) {
           </div>
         </div>
       </nav>
-      <nav>
+      {/* <nav>
         <div className="top-manga-container">
           <div>
             <h3>Top manga</h3>
@@ -34,7 +34,7 @@ function Sidebar({ topAnime, topManga }) {
             ))}
           </div>
         </div>
-      </nav>
+      </nav> */}
     </aside>
   );
 }

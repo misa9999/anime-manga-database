@@ -1,6 +1,6 @@
 import AnimeCard from './AnimeCard'
 
-function MainContent({ handleSearch, search, setSearch, animeList}) {
+function MainContent({ handleSearch, search, setSearch, animeList, mangaList}) {
   return (
     <main>
       <div className="main-head">
@@ -14,7 +14,8 @@ function MainContent({ handleSearch, search, setSearch, animeList}) {
           />
         </form>
       </div>
-      <div className="anime-list">
+      {animeList ? (
+        <div className="anime-list">
         {animeList.map(anime => (
           <AnimeCard
             anime={anime}
@@ -22,6 +23,16 @@ function MainContent({ handleSearch, search, setSearch, animeList}) {
           />
         ))}
       </div>
+      ) : (
+        <div className="anime-list">
+        {mangaList.map(manga => (
+          <AnimeCard
+            manga={manga}
+            key={manga.mal_id}
+          />
+        ))}
+      </div>
+      )}
     </main>
   )
 }

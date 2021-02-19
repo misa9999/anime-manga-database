@@ -9,13 +9,21 @@ import './assets/scss/main.css'
 function App() {
   const [animeList, setAnimeList] = useState([]);
   const [topAnime, setTopAnime] = useState([]);
+  const [topManga, setTopManga] = useState([]);
   const [search, setSearch] = useState('');
 
-  const GetTopAnime = async () => {
+  const getTopAnime = async () => {
     const temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/bypopularity`)
       .then(res => res.json());
     
     setTopAnime(temp.top.slice(0, 5));
+  }
+
+  const getTopManga = async () => {
+    const temp = await fetch(`https://api.jikan.moe/v3/top/manga/1/bypopularity`)
+      .then(res => res.json());
+
+    setTopManga(temp.top.slice(0, 5))
   }
 
   const handleSearch = e => {
@@ -32,7 +40,8 @@ function App() {
   }
 
   useEffect(() => {
-    GetTopAnime();
+    getTopAnime();
+    getTopManga();
   }, [])
 
 
@@ -49,7 +58,7 @@ function App() {
       <div id="scrollPath"></div>
       <Header />
       <div className="content-wrap">
-        <Sidebar topAnime={topAnime} />
+        <Sidebar topAnime={topAnime} topManga={topManga} />
           <MainContent 
             handleSearch={handleSearch}
             search={search}

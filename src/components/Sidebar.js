@@ -1,4 +1,4 @@
-function Sidebar({ topAnime }) {
+function Sidebar({ topAnime, topManga }) {
   return (
     <aside>
       <nav>
@@ -11,6 +11,19 @@ function Sidebar({ topAnime }) {
             rel="noreferrer"
           >
             {anime.title}
+          </a>
+        ))}
+      </nav>
+      <nav>
+        <h3>Top manga</h3>
+        {topManga.map(manga => (
+          <a
+            href={manga.url}
+            target="_blank"
+            key={manga.mal_id}
+            rel="noreferrer"
+          >
+            {manga.title}
           </a>
         ))}
       </nav>

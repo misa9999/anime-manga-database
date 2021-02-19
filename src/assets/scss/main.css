@@ -3,7 +3,11 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Fira sans', sans-serif;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  background: #252525;
 }
 
 header {
@@ -12,20 +16,47 @@ header {
 }
 
 header h1 {
-  color: #AAA;
+  color: #aaa;
   font-size: 36px;
   font-weight: 400;
   text-align: center;
 }
 
 header h1 strong {
-  color: #313131;
+  color: #ed9d2d;
 }
 
 .content-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.content-wrap main {
+  margin: 0 auto;
+}
+
+.content-wrap main input {
+  border: none;
+  border-radius: 50px;
+  width: 500px;
+  height: 45px;
+  padding: 16px;
+  outline: none;
+  font-size: 16px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.content-wrap main input:hover {
+  background: #ed9d2d;
+}
+
+.content-wrap main input:focus {
+  background: #ed9d2d;
 }
 
 .content-wrap aside {
@@ -42,7 +73,7 @@ header h1 strong {
 }
 
 .content-wrap aside nav h3 {
-  color: #313131;
+  color: #ed9d2d;
   font-size: 24px;
   margin-bottom: 16px;
 }
@@ -54,7 +85,7 @@ header h1 strong {
   color: #888;
   font-size: 16px;
   margin-bottom: 16px;
-  background-color: #EEE;
+  background-color: #eee;
   border-radius: 999px;
   text-decoration: none;
   -webkit-transition: 0.4s;
@@ -63,6 +94,6 @@ header h1 strong {
 
 .content-wrap aside nav a:hover {
   background-color: #313131;
-  color: #AAA;
+  color: #aaa;
 }
 /*# sourceMappingURL=main.css.map */

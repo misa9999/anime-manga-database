@@ -1,9 +1,20 @@
+$white: #eee;
+$orange: #ed9d2d;
+$bg-color: #252525;
+$bg-color-secondary: #313131;
+$gray: #aaa;
+$gray-dark: #888;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  font-family: 'Fira sans', sans-serif;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  background: $bg-color;
 }
 
 header {
@@ -11,56 +22,80 @@ header {
   padding-bottom: 50px;
 
   h1 {
-    color: #AAA;
+    color: $gray;
     font-size: 36px;
     font-weight: 400;
     text-align: center;
 
     strong {
-      color: #313131;
+      color: $orange;
     }
   }
 }
 
 .content-wrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  main {
+    margin: 0 auto;
+
+    input {
+      border: none;
+      border-radius: 50px;
+      width: 500px;
+      height: 45px;
+      padding: 16px;
+      outline: none;
+      font-size: 16px;
+      box-shadow: none;
+      transition: 200ms;
+
+      &:hover {
+        background: $orange;
+      }
+
+      &:focus {
+        background: $orange;
+      }
+    }
+  }
 
   aside {
-		flex: 1 1 250px;
-		max-width: 250px;
-		padding-right: 16px;
+    flex: 1 1 250px;
+    max-width: 250px;
+    padding-right: 16px;
 
-		nav {
-			padding-left: 16px;
-			padding-right: 16px;
+    nav {
+      padding-left: 16px;
+      padding-right: 16px;
 
-			h3 {
-				color: #313131;
-				font-size: 24px;
-				margin-bottom: 16px;
-			}
+      h3 {
+        color: $orange;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
 
-			a {
-				display: block;
-				padding: 8px 16px;
-				text-align: left;
+      a {
+        display: block;
+        padding: 8px 16px;
+        text-align: left;
 
-				color: #888;
-				font-size: 16px;
-				margin-bottom: 16px;
+        color: $gray-dark;
+        font-size: 16px;
+        margin-bottom: 16px;
 
-				background-color: #EEE;
-				border-radius: 999px;
-				text-decoration: none;
+        background-color: $white;
+        border-radius: 999px;
+        text-decoration: none;
 
-				transition: 0.4s;
+        transition: 0.4s;
 
-				&:hover {
-					background-color: #313131;
-					color: #AAA;
-				}
-			}
-		}
-	}
-
+        &:hover {
+          background-color: $bg-color-secondary;
+          color: $gray;
+        }
+      }
+    }
+  }
 }

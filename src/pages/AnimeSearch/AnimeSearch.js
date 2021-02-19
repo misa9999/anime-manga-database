@@ -5,6 +5,7 @@ import Sidebar from '../../components/Sidebar'
 import MainContent from '../../components/MainContent'
 import Loading from '../../components/Loading';
 
+import animationData from '../../lottie/menhera-chan-1.json'
 
 import '../../assets/scss/main.css';
 
@@ -48,7 +49,7 @@ function AnimeSearch() {
   return (
     <>
     {loading ? (
-      <Loading />
+      <Loading animationData={animationData} />
     ) : (
       <div>
       <Header name={'Anime'} />

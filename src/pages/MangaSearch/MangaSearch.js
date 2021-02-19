@@ -6,6 +6,9 @@ import MainContent from "../../components/MainContent";
 
 import Loading from '../../components/Loading';
 
+import animationData from '../../lottie/menhera-chan-1.json'
+
+
 function MangaSearch() {
   const [mangaList, setMangaList] = useState([]);
   const [topManga, setTopManga] = useState([]);
@@ -45,7 +48,7 @@ function MangaSearch() {
   return (
     <>
       {loading ? (
-        <Loading />
+        <Loading animationData={animationData} />
       ) : (
         <div>
           <Header name={"Manga"} />

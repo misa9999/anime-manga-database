@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Loading from '../../components/Loading';
 
+import animationData from '../../lottie/menhera-chan-2.json'
+
 
 
 import "../../assets/scss/main.css";
@@ -23,7 +25,7 @@ function Home() {
   return (
     <>
       {loading ? (
-        <Loading />
+        <Loading animationData={animationData} />
       ) : (
         <div className="home-container">
           <Header value={"header-home"} name={"Anime&Manga"} />

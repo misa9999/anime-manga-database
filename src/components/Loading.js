@@ -1,7 +1,6 @@
 import Lottie from 'react-lottie';
-import animationData from '../lottie/menhera-chan-1.json'
 
-function Loading() {
+function Loading({ animationData }) {
   const defaultOptions = {
     loop: true,
     autoplay: true,

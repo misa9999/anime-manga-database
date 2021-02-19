@@ -218,6 +218,7 @@ header h1 strong {
 
 .content-wrap aside nav .top-anime-container div {
   position: fixed;
+  padding-top: 50px;
 }
 
 .content-wrap aside nav .top-manga-container div {

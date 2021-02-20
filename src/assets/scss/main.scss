@@ -254,13 +254,9 @@ header {
 
 @media screen and (max-width: 900px) {
   .img-home {
-    display: flex;
-    margin: -120px auto -70px auto;
-    width: 544px;
-    height: 459px;
-    overflow: hidden;
+    width: 450px;
+    height: 400px;
   }
-
   .container-arrow {
     margin-top: -125px;
     position: absolute;
@@ -279,11 +275,12 @@ header {
 
 @media screen and (max-width: 600px) {
   .img-home {
-    display: flex;
-    margin: -120px auto -70px auto;
-    width: 544px;
-    height: 459px;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    width: 100%;
   }
 
   .top-manga-container,

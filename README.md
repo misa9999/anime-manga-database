@@ -1,4 +1,4 @@
-<h1 align="center"><strong>Anime&MangaSearch</strong></h1>
+<h1 align="center"><strong>⛩ Anime&Manga Database</strong></h1>
 
 
 <p align="center">
@@ -6,11 +6,11 @@
   <img alt="Made with React" src="https://img.shields.io/badge/Made_with-React.JS-000?style=for-the-badge&logo=react" />
 </a>
 
-  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/yuukiasuna00/anime-search?color=000&style=for-the-badge">
+  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/yuukiasuna00/anime-manga-database?color=000&style=for-the-badge">
   
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/yuukiasuna00/anime-search?color=000&style=for-the-badge">
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/yuukiasuna00/anime-manga-database?color=000&style=for-the-badge">
   
-  <img alt="License" src="https://img.shields.io/github/license/yuukiasuna00/anime-search?color=000&style=for-the-badge"/>
+  <img alt="License" src="https://img.shields.io/github/license/yuukiasuna00/anime-manga-database?color=000&style=for-the-badge"/>
   
   <a href="https://github.com/yuukiasuna00/">
     <img alt="Developed by YuukiAsuna" src="https://img.shields.io/badge/Dev-YuukiAsuna-%3498db?color=000&style=for-the-badge">
@@ -36,7 +36,7 @@
 ### ✨ Final Project
 > Netlify: https://anime-manga-database.netlify.app/
 <p align="center">
-  <img src="https://github.com/yuukiasuna00/anime-search/blob/main/.github/screen.gif" alt="Anime&Manga Gif" />
+  <img src="https://github.com/yuukiasuna00/anime-manga-database/blob/main/.github/screen.gif" alt="Anime&Manga Gif" />
 </p>
 
 ---
@@ -65,7 +65,7 @@ React Lottie for the loading animations and Framer Motion for the page transitio
 
 ---
 ### 📲 How to run
-> Step 1: clone this repository typing in your terminal `git@github.com:yuukiasuna00/anime-search.git`
+> Step 1: clone this repository typing in your terminal `git@github.com:yuukiasuna00/anime-manga-database.git`
 
 > Step 2: type `yarn` and wait install all dependencies
 
@@ -88,7 +88,7 @@ React Lottie for the loading animations and Framer Motion for the page transitio
 
 ---
 ### 📄 License
-This project is under MIT license. See the [LICENSE](https://github.com/yuukiasuna00/anime-search/blob/main/LICENSE) file for more details.
+This project is under MIT license. See the [LICENSE](https://github.com/yuukiasuna00/anime-manga-database/blob/main/LICENSE) file for more details.
 
 ---
 ### 🟣 Credits

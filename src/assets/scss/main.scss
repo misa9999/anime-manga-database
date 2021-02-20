@@ -279,10 +279,6 @@ header {
     height: 100%;
   }
 
-  h1 {
-    width: 100%;
-  }
-
   .top-manga-container,
   .top-anime-container {
     display: none;
@@ -298,11 +294,22 @@ header {
   }
 
   .title-home {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .anime-list {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container-arrow {
+    margin-top: -135px;
+    position: absolute;
+  }
+
+  input {
+    max-width: 200px;
   }
 }

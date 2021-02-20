@@ -1,5 +1,4 @@
 import Img02 from '../assets/images/img-02.png';
-import Img03 from '../assets/images/img-03.png';
 
 function Header({ value, name }) {
   console.log(value)

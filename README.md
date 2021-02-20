@@ -36,7 +36,7 @@
 ### ✨ Final Project
 > Netlify: https://anime-manga-database.netlify.app/
 <p align="center">
-  <img src="https://github.com/yuukiasuna00/anime-manga-database/blob/main/.github/screen.gif" alt="Anime&Manga Database" />
+  <img src="https://github.com/yuukiasuna00/anime-manga-database/blob/main/.github/screen-1.gif" alt="Anime&Manga Database" />
 </p>
 
 ---

@@ -303,7 +303,7 @@ header {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 325px) {
   .container-arrow {
     margin-top: -135px;
     position: absolute;
@@ -311,5 +311,9 @@ header {
 
   input {
     max-width: 200px;
+  }
+
+  .title-home {
+    font-size: 24px;
   }
 }
